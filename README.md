@@ -31,7 +31,7 @@ The main purpose of this exercise was to practice using "state" and "props" in R
 
 If you haven't already, install `create-react-router` via npm. This tool will allow us to create a blank react app with all the basics.
 
-Next, create your app. To do this, from the command line run `create-react-app reactjs-space` in the directory of your choice. cd into `react-space`, run `npm start`, and the app is off and running.
+Next, create your app. To do this, from the command line run `create-react-app reactjs-space` in the directory of your choice. cd into `react-space`, run `npm start`, and the app is off and running. Or (and this is definitely the better option), just clone this repository from GitHub.
 
 The main module we're going to need is called `react-router`. React Router helps with simple browser history and navigation. If you've ever played with a basic react app, you may have noticed that regardless of where you are, pressing "back" in the browser will take you directly to the root page. React Router fixes that.
 
