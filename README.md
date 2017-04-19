@@ -16,11 +16,8 @@ Hierarchy:
 [ index.js ]
 
 [                          App.js                                ]
-
-                      (container files)
-    \                         \                        \
+        \                     \                        \
 [ HomeContainer ] - [ SolarSystemContainer ] - [ PlanetContainer ]
-                        (view files)
                               \                         \
                        [ SolarSystem ]              [ Planet ]
 
