@@ -39,17 +39,21 @@ Router v4 has been giving me some issues, so for the purpose of this app, we'll 
 
 **Routing**
 
-If you take a look at index.js, you'll notice some curious code in the render function. This is the core of the router. <Router history={browserHistory}> is what allows the app to remember where you've been. Each nested route has a path, which represents what amounts to basically a URL address. Take note that most routes are nested under the App component. This is important when it comes to states and props.
+If you take a look at index.js, you'll notice some curious code in the render function. This is the core of the router. `<Router history={browserHistory}>` is what allows the app to remember where you've been. Each nested route has a path, which represents what amounts to basically a URL address. Take note that most routes are nested under the App component. This is important when it comes to states and props.
 
 ***States/Props:***
 
-At the heart of React is the ability to pass information between components in a sort of waterfall effect. At the top of this document I illustrated this hierarchy. Anything in App.js can be passed down to its child components, and on to their children, and so on ad infinitum. This can be accomplished through ***state***. State is a malleable object. It would generally be created by accessing a database and passing queries, but in this example it's static.
+At the heart of React is the ability to pass information between components in a sort of waterfall effect. At the top of this document I illustrated this hierarchy. Anything in App.js can be passed down to its child components, and on to their children, and so on ad infinitum. This can be accomplished through ***state***. State is a malleable object. It would generally be created by accessing a database and sending queries, but in this example it's static.
 
 In my App.js file, I set the state of "planets" as an array of objects. Now any lower components can use the "planets" data. They can do this by using ***props***. Props differ from state because they don't really change. They will access the state, which may have been dynamically generated, and then simply manipulate the information they have been given: the properties of the state. An example in this app can be seen in the waterfall of data going from:
 
 App.js -> SolarSystemContainer.js -> SolarSystem.js
 
 App creates a state as an object containing "planets." SolarSystemContainer inherits this as a property. It then takes this "planets" property to create its own state, then in turn render the SolarSystem view file using its own set of properties. SolarSystem, having access to all the planet information generated way back in App, can then manipulate the data into html to be viewed on the browser.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
