@@ -6,9 +6,9 @@ App.js - the highest level component. can render global html and dictates behavi
 
 HomeContainer.js - simply constructs a home page with a welcome message.
 
-SolarSystemContainer - displays the planets of the solar system.
+SolarSystemContainer.js - displays the planets of the solar system.
 
-PlanetContainer - displays a single planet.
+PlanetContainer.js - displays a single planet.
 **Hierarchy:**
 
 ```
