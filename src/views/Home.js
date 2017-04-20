@@ -9,7 +9,7 @@ const Home = (props) => {
         Let's look at the planets of the solar system.
         <img src="/images/home.gif" />
       </Link>
-      <a href="/solarsystem">Solar System - just a regular link (not React - this link will cause a page reload)</a>
+      <a href="/solarsystem">Solar System - just a regular link (not React - this link will cause a page load)</a>
     </div>
   )
 }
