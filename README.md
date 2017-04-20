@@ -39,7 +39,7 @@ Router v4 has been giving me some issues, so for the purpose of this app, we'll 
 
 **Routing**
 
-If you take a look at index.js, you'll notice some curious code in the render function. This is the core of the router. `<Router history={browserHistory}>` is what allows the app to remember where you've been. Each nested route has a path, which represents what amounts to basically a URL address. Take note that most routes are nested under the App component. This is important when it comes to states and props.
+If you take a look at index.js, you'll notice some curious code in the `render` function. This is the core of the router. `<Router history={browserHistory}>` is what allows the app to remember where you've been. Each nested route has a path, which represents what amounts to basically a URL address. Take note that most routes are nested under the App component. This is important when it comes to states and props.
 
 **States/Props:**
 
