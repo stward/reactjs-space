@@ -15,7 +15,7 @@ render((
     <Route path='/' component={App}>
       <IndexRoute component={HomeContainer}/>
       <Route path='/solarsystem' component={SolarSystemContainer}></Route>
-        <Route path='/solarsystem/:planetIndex' component={PlanetContainer}></Route>
+      <Route path='/solarsystem/:planetIndex' component={PlanetContainer}></Route>
     </Route>
   </Router>
 ), document.getElementById('root'));
