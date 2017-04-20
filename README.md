@@ -9,6 +9,7 @@ HomeContainer.js - simply constructs a home page with a welcome message.
 SolarSystemContainer.js - displays the planets of the solar system.
 
 PlanetContainer.js - displays a single planet.
+
 **Hierarchy:**
 
 ```
