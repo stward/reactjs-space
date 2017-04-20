@@ -10,9 +10,9 @@ import PlanetContainer from './containers/PlanetContainer';
 import './index.css';
 
 render((
-  <Router history={browserHistory} >
+  <Router history={browserHistory}>
     <Route path='/' component={App}>
-      <IndexRoute component={HomeContainer}/>
+      <IndexRoute component={HomeContainer} />
       <Route path='/solarsystem' component={SolarSystemContainer}></Route>
       <Route path='/solarsystem/:planetIndex' component={PlanetContainer}></Route>
     </Route>
