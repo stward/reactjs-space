@@ -1,14 +1,14 @@
 **App Structure:**
 
-[ index.js - contains all routing information; the central "brain" of the app ]
+index.js - contains all routing information; the central "brain" of the app.
 
-[ App.js - the highest level component. can render global html and dictates behavior of child components ]
+App.js - the highest level component. can render global html and dictates behavior of child components.
 
-[ HomeContainer.js - simply a home page with a welcome message. ]
+HomeContainer.js - simply a home page with a welcome message.
 
-[ SolarSystemContainer - displays the planets of the solar system. ]
+SolarSystemContainer - displays the planets of the solar system.
 
-[ PlanetContainer - displays a single planet. ]
+PlanetContainer - displays a single planet.
 
 **Hierarchy:**
 
