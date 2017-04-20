@@ -5,13 +5,10 @@ index.js - contains all routing information; the central "brain" of the app.
 App.js - the highest level component. can render global html and dictates behavior of child components.
 
 HomeContainer.js - simply constructs a home page with a welcome message.
-Home.js - creates view html
 
 SolarSystemContainer - displays the planets of the solar system.
-SolarSystem.js - creates view html
 
 PlanetContainer - displays a single planet.
-Planet.js - creates view html
 **Hierarchy:**
 
 ```
