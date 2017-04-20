@@ -49,7 +49,7 @@ In my App.js file, I set the state of "planets" as an array of objects. Now any 
 
 App.js -> SolarSystemContainer.js -> SolarSystem.js
 
-App creates a state as an object containing "planets." SolarSystemContainer inherits this as a property. It then takes this "planets" property to create its own state, then in turn renders the SolarSystem view file using its own set of properties. SolarSystem, having access to all the planet information generated way back in App, can then manipulate the data into html to be viewed on the browser.
+App creates a state with an object containing "planets." SolarSystemContainer inherits this as a property. It then takes this "planets" property to create its own state, then in turn renders the SolarSystem view file using its own set of properties. SolarSystem, having access to all the planet information generated way back in App, can then manipulate the data into html to be viewed on the browser.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
