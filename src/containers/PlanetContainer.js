@@ -3,13 +3,16 @@ import Planet from '../views/Planet';
 
 class PlanetContainer extends Component {
 
-  constructor (props) {
-    super(props);
+  state = {
+    planet: null,
+    stardate: null
+  }
+
+  componentDidMount = () => this.setInfo()
+
+  setInfo = () => {
     var planet = this.props.planets[this.props.params.planetIndex];
-    this.state = {
-      planet: planet,
-      stardate: this.props.stardate
-    }
+    this.setState({planet: planet, stardate: new Date()});
   }
 
   render () {
@@ -17,7 +20,8 @@ class PlanetContainer extends Component {
       <div>
         <h1>The Planets of the Solar System</h1>
         <div>
-          <Planet planet={this.state.planet} stardate={this.state.stardate} />
+          {this.state.planet && this.state.stardate
+            ? <Planet planet={this.state.planet} stardate={this.state.stardate} /> : null}
         </div>
       </div>
     )

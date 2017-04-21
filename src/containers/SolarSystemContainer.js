@@ -3,11 +3,8 @@ import SolarSystem from '../views/SolarSystem';
 
 class SolarSystemContainer extends Component {
 
-  constructor (props) {
-    super(props);
-    this.state = {
-      planets: this.props.planets
-    }
+  state = {
+    planets: this.props.planets
   }
 
   render () {

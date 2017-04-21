@@ -3,11 +3,8 @@ import Home from '../views/Home';
 
 class HomeContainer extends Component {
 
-  constructor (props) {
-    super(props);
-    this.state = {
-      homePlanet: "Earth"
-    }
+  state = {
+    homePlanet: "Earth"
   }
 
   render () {
