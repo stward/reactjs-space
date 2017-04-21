@@ -4,7 +4,7 @@ import Home from '../views/Home';
 class HomeContainer extends Component {
 
   state = {
-    homePlanet: "Earth"
+    homePlanet: "Mars"
   }
 
   render () {

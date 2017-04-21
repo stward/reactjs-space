@@ -18,8 +18,8 @@ PlanetContainer.js - displays a single planet.
 [                          App.js                                ]
         \                     \                        \
 [ HomeContainer ] - [ SolarSystemContainer ] - [ PlanetContainer ]
-                              \                         \
-                       [ SolarSystem ]              [ Planet ]
+        \                     \                         \
+    [ Home ]            [ SolarSystem ]             [ Planet ]
 
 ```
 
